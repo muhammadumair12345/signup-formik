@@ -1,15 +1,30 @@
 import React, { FC } from "react";
-import { Line, Step, Stepper } from "./SignupFormStepper.style";
+import {
+  Label,
+  Line,
+  Step,
+  Stepper,
+  StepperContainer,
+} from "./SignupFormStepper.style";
 
 const SignupFormStepper: FC = () => {
   return (
-    <Stepper>
-      <Step>1</Step>
+    <StepperContainer>
+      <Stepper>
+        <Step>1</Step>
+        <Label>Personal Data</Label>
+      </Stepper>
       <Line />
-      <Step>2</Step>
+      <Stepper>
+        <Step>2</Step>
+        <Label>Bank Accounts</Label>
+      </Stepper>
       <Line />
-      <Step>3</Step>
-    </Stepper>
+      <Stepper>
+        <Step>3</Step>
+        <Label>More Info</Label>
+      </Stepper>
+    </StepperContainer>
   );
 };
 
