@@ -1,25 +1,15 @@
 import styled from "styled-components";
 
-export const StepperContainer = styled.div`
+export const Stepper = styled.div`
   margin-top: 1.5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const Stepper = styled.div`
-  display: flex;
-  flex-direction: column;
   align-items: center;
 `;
 
 export const Step = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   min-width: 2rem;
-  min-height: 2rem;
-  margin-bottom: 0.8rem;
+  max-height: 2rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 0.4rem;
   border-radius: 50px;
@@ -29,7 +19,7 @@ export const Step = styled.div`
 
 export const Line = styled.div`
   flex-grow: 1;
-  margin-bottom: 30px;
+  margin: 0 0.8rem;
   border: 1px solid #fff;
 `;
 
