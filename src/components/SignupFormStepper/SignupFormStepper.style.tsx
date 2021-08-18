@@ -13,7 +13,10 @@ export const Step = styled.div`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 0.4rem;
   border-radius: 50px;
-  background: linear-gradient(#3e7ebc, #89bce5);
+  background: ${({ active }: any) =>
+    active
+      ? "linear-gradient(#3e7ebc, #89bce5)"
+      : "linear-gradient(#787c81, #b4b9bd)"};
   color: #fff;
 `;
 
